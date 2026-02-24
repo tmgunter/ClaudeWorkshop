@@ -1,0 +1,30 @@
+# .NET
+Backend/**/bin/
+Backend/**/obj/
+Backend/**/TestResults/
+Backend/coverage-report/
+
+# Node
+Frontend/node_modules/
+Frontend/dist/
+
+# Playwright
+Frontend/e2e/evidence/test-results/
+Frontend/test-results/
+Frontend/playwright-report/
+
+# Coverage
+Frontend/coverage/
+
+# IDE
+.vs/
+.vscode/
+*.suo
+*.user
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Claude
+.claude/
