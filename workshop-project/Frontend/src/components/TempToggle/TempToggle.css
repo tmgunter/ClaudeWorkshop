@@ -1,0 +1,32 @@
+.temp-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #fff;
+  transition: background 0.2s;
+}
+
+.temp-toggle:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.temp-toggle__option {
+  opacity: 0.5;
+  font-weight: 400;
+  transition: opacity 0.2s, font-weight 0.2s;
+}
+
+.temp-toggle__option--active {
+  opacity: 1;
+  font-weight: 700;
+}
+
+.temp-toggle__separator {
+  opacity: 0.4;
+}

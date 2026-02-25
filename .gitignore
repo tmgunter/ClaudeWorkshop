@@ -1,20 +1,20 @@
 # .NET
-Backend/**/bin/
-Backend/**/obj/
-Backend/**/TestResults/
-Backend/coverage-report/
+**/bin/
+**/obj/
+**/TestResults/
+**/coverage-report/
 
 # Node
-Frontend/node_modules/
-Frontend/dist/
+**/node_modules/
+**/dist/
 
 # Playwright
-Frontend/e2e/evidence/test-results/
-Frontend/test-results/
-Frontend/playwright-report/
+**/e2e/evidence/test-results/
+**/test-results/
+**/playwright-report/
 
 # Coverage
-Frontend/coverage/
+**/coverage/
 
 # IDE
 .vs/
