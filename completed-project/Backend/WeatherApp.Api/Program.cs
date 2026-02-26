@@ -15,7 +15,8 @@ public class Program
         builder.Services.AddControllers()
             .AddJsonOptions(options =>
             {
-                options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+                options.JsonSerializerOptions.Converters.Add(
+                    new JsonStringEnumConverter(System.Text.Json.JsonNamingPolicy.CamelCase));
             });
         builder.Services.AddOpenApi();
 
