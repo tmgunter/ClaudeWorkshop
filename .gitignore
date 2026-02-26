@@ -26,5 +26,6 @@
 Thumbs.db
 .DS_Store
 
-# Claude
-.claude/
+# Claude - ignore local/personal files but allow shared config (agents, hooks, rules, etc.)
+.claude/settings.local.json
+.claude/CLAUDE.local.md
