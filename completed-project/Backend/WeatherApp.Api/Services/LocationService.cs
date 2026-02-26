@@ -16,6 +16,7 @@ public class LocationService : ILocationService
         new("anchorage-ak", "Anchorage", "AK", "US", 61.22, -149.90),
         new("honolulu-hi", "Honolulu", "HI", "US", 21.31, -157.86),
         new("dallas-tx", "Dallas", "TX", "US", 32.78, -96.80),
+        new("las-vegas-nv", "Las Vegas", "NV", "US", 36.17, -115.14),
     ];
 
     private static readonly Dictionary<string, LocationInfo> LocationsById =

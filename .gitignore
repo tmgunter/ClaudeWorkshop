@@ -29,3 +29,4 @@ Thumbs.db
 # Claude - ignore local/personal files but allow shared config (agents, hooks, rules, etc.)
 .claude/settings.local.json
 .claude/CLAUDE.local.md
+.claude/edit-log.txt

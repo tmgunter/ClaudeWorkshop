@@ -85,6 +85,13 @@ public class MockWeatherDataProvider : IWeatherDataProvider
             [55, 58, 58, 62, 65, 55, 48, 48, 55, 60, 60, 58],
             [WeatherCondition.Cloudy, WeatherCondition.PartlyCloudy, WeatherCondition.Sunny, WeatherCondition.PartlyCloudy]
         ),
+        ["las-vegas-nv"] = new(
+            [58, 63, 71, 80, 90, 100, 106, 103, 95, 82, 67, 57],
+            [37, 41, 47, 54, 63, 72, 79, 77, 69, 56, 44, 36],
+            [10, 10, 8, 5, 3, 2, 5, 8, 5, 5, 8, 10],
+            [30, 25, 20, 15, 12, 8, 12, 16, 14, 18, 25, 32],
+            [WeatherCondition.Sunny, WeatherCondition.Sunny, WeatherCondition.Sunny, WeatherCondition.Sunny]
+        ),
     };
 
     public IReadOnlyList<DailyForecast> GetForecast(LocationInfo location, DateOnly startDate, int days)

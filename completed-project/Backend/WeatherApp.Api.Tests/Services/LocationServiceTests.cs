@@ -10,7 +10,7 @@ public class LocationServiceTests
     public void GetAllLocations_ReturnsAllTenCities()
     {
         var locations = _sut.GetAllLocations();
-        Assert.Equal(10, locations.Count);
+        Assert.Equal(11, locations.Count);
     }
 
     [Fact]
@@ -28,6 +28,7 @@ public class LocationServiceTests
         Assert.Contains("Anchorage", cities);
         Assert.Contains("Honolulu", cities);
         Assert.Contains("Dallas", cities);
+        Assert.Contains("Las Vegas", cities);
     }
 
     [Theory]
@@ -55,14 +56,14 @@ public class LocationServiceTests
     public void SearchLocations_EmptyQuery_ReturnsAll()
     {
         var results = _sut.SearchLocations("");
-        Assert.Equal(10, results.Count);
+        Assert.Equal(11, results.Count);
     }
 
     [Fact]
     public void SearchLocations_WhitespaceQuery_ReturnsAll()
     {
         var results = _sut.SearchLocations("   ");
-        Assert.Equal(10, results.Count);
+        Assert.Equal(11, results.Count);
     }
 
     [Fact]
